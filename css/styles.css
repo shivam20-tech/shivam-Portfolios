@@ -603,6 +603,13 @@
       font-size:0.78rem; color:var(--muted);
       font-style:italic; margin-bottom:1rem;
     }
+    .note-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-style: italic;
+      transition: opacity 0.2s;
+    }
+    .note-link:hover { opacity: 0.75; text-decoration: underline; }
     .project-links { margin-top:1.25rem; display:flex; gap:0.75rem; flex-wrap:wrap; }
     .btn-link {
       display:inline-flex; align-items:center; gap:0.4rem;
