@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivam Mistry | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+  <!-- ── Cursor ── -->
+  <div class="c-dot" id="cDot"></div>
+  <div class="c-ring" id="cRing"></div>
+
+  <!-- ── Header ── -->
+  <header>
+    <div class="logo"><a href="#home">Shivam <span>Mistry</span></a></div>
+    <div class="header-right">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- Dark Mode Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+        <span class="toggle-icons">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="home" class="section">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <div class="status-dot"></div>
+          <span>Open to opportunities</span>
+        </div>
+
+        <h1 class="hero-heading">
+          Hello,<br>I'm <em>Shivam</em>
+        </h1>
+
+        <p class="hero-sub">
+          MSc IT Graduate & aspiring web developer — turning ideas into clean, functional experiences through real-world
+          projects and continuous learning.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-fill">View Projects ↓</a>
+          <!-- <a href="assets/Shivam_Mistry_CV.pdf" class="btn btn-outline" download="Shivam_Mistry_Resume.pdf"> -->
+          <!-- <i class="fas fa-download" style="font-size:0.75rem"></i> Resume -->
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="profile-frame">
+          <img src="assets/Profile.jpg" alt="Shivam Mistry"
+            onerror="this.parentElement.innerHTML='<div class=\'profile-placeholder\'>🧑‍💻</div>'" />
+        </div>
+        <div class="frame-deco"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="tag">About me</div>
+    <div class="about-grid">
+      <div class="reveal">
+        <h2 class="about-heading">Passion<br>driven<br><span>developer</span></h2>
+      </div>
+      <div class="about-body reveal" style="transition-delay:0.15s">
+        <p>Hello! I'm Shivam Mistry, a passionate and dedicated developer who has completed a Master of Science in
+          Information Technology (MSc IT) and holds a Bachelor of Science in Computer Science (BSc), where I built a
+          strong foundation in programming, algorithms, and problem-solving.</p>
+        <p>During my MSc, I completed an internship at <strong style="color:var(--text)">Haronex Technology Pvt.
+            Ltd.</strong>, where I developed a full-featured POS Management System — gaining hands-on experience in web
+          development, database design, and real-world software delivery.</p>
+        <p>I'm focused on building responsive web applications, exploring data science, and applying my skills to
+          meaningful, impactful projects.</p>
+
+        <div class="chips">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Python</span>
+          <span class="chip">Django</span>
+          <span class="chip">PHP</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">Git</span>
+          <span class="chip">Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+  <section id="projects" class="section">
+    <div class="tag">Selected work</div>
+    <div class="projects-heading reveal">
+      <h2>Projects I've<br>built so far</h2>
+      <div class="proj-num">04</div>
+    </div>
+
+    <!-- Real Estate -->
+    <div class="project-card reveal">
+      <div class="project-card__media">
+        <img src="assets/real_estate.jpg" alt="Real Estate Preview" class="project-img"
+          onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>🏠</div>'" />
+      </div>
+      <div class="project-card__body">
+        <div class="proj-index">01 — BSc Project</div>
+        <h3 class="project-title">Real Estate Website</h3>
+        <p class="project-desc">A collaborative project simulating a real estate listing platform with search and
+          filtering features — built with a full backend stack.</p>
+        <p class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+        <p class="project-note">Currently hosted on localhost.</p>
+      </div>
+    </div>
+
+    <!-- Task Manager -->
+    <div class="project-card reveal" style="transition-delay:0.1s">
+      <div class="project-card__media">
+        <img src="assets/taskmanger1.jpg" alt="Task Manager screenshot 1" class="project-img"
+          onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>✅</div>'" />
+        <img src="assets/taskmanger2.jpg" alt="Task Manager screenshot 2" class="project-img--small"
+          onerror="this.style.display='none'" />
+      </div>
+      <div class="project-card__body">
+        <div class="proj-index">02 — Django App</div>
+        <h3 class="project-title">Task Manager Web App</h3>
+        <p class="project-desc">A full-stack task management application built with Django. Users can create tasks, mark
+          them complete, delete tasks, and view task details.</p>
+        <p class="project-tech"><strong>Tech:</strong> Django, Python, SQLite, HTML Templates</p>
+        <div class="project-links">
+          <a href="https://github.com/shivam20-tech/TaskManager" target="_blank" rel="noopener" class="btn-link">
+            <i class="fab fa-github"></i> View Source Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- POS Management System — NEW -->
+    <div class="project-card reveal" style="transition-delay:0.2s">
+      <div class="project-card__media">
+        <img src="assets/pos_system.jpeg" alt="POS Management System" class="project-img" onerror="this.parentElement.innerHTML=`<div class='pos-placeholder'>
+               <span>🧾</span>
+               <span class='pos-label'>POS Management System</span>
+               <div class='pos-badge'>
+                 <span>Billing</span><span>Inventory</span><span>GST</span><span>Reports</span>
+               </div>
+             </div>`" />
+      </div>
+      <div class="project-card__body">
+
+        <div class="proj-index">03 — MSc Internship</div>
+
+        <div class="intern-badge">
+          <i class="fas fa-building"></i>
+          <span>Haronex Technology Pvt. Ltd.</span>
+        </div>
+
+        <h3 class="project-title">POS Management System</h3>
+
+        <a href="https://shivpos.unaux.com/" target="_blank" rel="noopener noreferrer" class="btn-link">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+
+        <p class="project-desc">
+          A web-based Point of Sale application built to automate retail store operations —
+          from billing and inventory to role-based access and sales reporting.
+        </p>
+
+        <ul class="feature-list">
+          <li>Billing with GST &amp; Discount Calculation</li>
+          <li>Invoice Generation</li>
+          <li>Inventory Management &amp; Low Stock Alerts</li>
+          <li>Sales Reports &amp; Data Visualization</li>
+          <li>Role-based Login (Admin &amp; Cashier)</li>
+          <li>Product &amp; Category Management</li>
+        </ul>
+
+        <p class="project-tech">
+          <strong>Tech:</strong> HTML, CSS, Bootstrap, JavaScript, PHP, MySQL
+        </p>
+
+        <p class="project-note">
+          <i class="fas fa-server" style="font-size:0.7rem;margin-right:0.3rem;opacity:0.6"></i>
+          Hosted on <a href="https://profreehost.com/" target="_blank" rel="noopener noreferrer" class="note-link">ProFreeHost</a> — free PHP &amp; MySQL hosting platform.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- FlowFi — Personal Finance SaaS -->
+    <div class="project-card reveal" style="transition-delay:0.3s">
+      <div class="project-card__media">
+        <div class="floowfi-placeholder">
+          <div class="floowfi-logo">
+            <i class="fas fa-bolt"></i>
+            <span>FlowFi</span>
+          </div>
+          <p class="floowfi-tagline">Personal Finance SaaS</p>
+          <div class="floowfi-chips">
+            <span>Real-time</span><span>AI Scoring</span><span>Mobile-first</span><span>Live</span>
+          </div>
+          <div class="floowfi-score">
+            <div class="floowfi-score-ring">90</div>
+            <span>Financial Health Score</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card__body">
+
+        <div class="proj-index">04 — Full-Stack SaaS</div>
+
+        <div class="saas-badge">
+          <i class="fas fa-circle" style="font-size:0.45rem;color:#22c55e"></i>
+          <span>Live on Vercel</span>
+        </div>
+
+        <h3 class="project-title">FlowFi — Finance Dashboard</h3>
+
+        <p class="project-desc">
+          Full-stack personal finance SaaS with real-time transaction tracking, budget management, savings goals,
+          investment portfolio tracker, and a custom AI-powered financial health scoring algorithm.
+        </p>
+
+        <ul class="feature-list">
+          <li>AI Financial Health Scoring (custom algorithm)</li>
+          <li>Real-time Transactions &amp; Budget Tracking</li>
+          <li>Savings Goals &amp; Investment Portfolio</li>
+          <li>Firebase Auth with persistent sessions</li>
+          <li>Mobile-first UI with bottom nav &amp; touch UX</li>
+          <li>CI/CD pipeline deployed on Vercel</li>
+        </ul>
+
+        <p class="project-tech"><strong>Tech:</strong> Next.js · TypeScript · Firebase · Zustand · Tailwind CSS · Framer
+          Motion · Recharts</p>
+
+        <div class="project-links">
+          <a href="https://floowfi.vercel.app" target="_blank" rel="noopener noreferrer"
+            class="btn-link btn-link--live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <hr class="div" />
+
+  <!-- ══════════════════════════════════════
+       EXPERIENCE
+  ══════════════════════════════════════ -->
+  <section id="experience" class="section">
+    <div class="tag reveal">Work history</div>
+    <h2 class="exp-heading reveal">Experience</h2>
+
+    <div class="timeline">
+
+      <!-- Haronex Internship -->
+      <div class="exp-card reveal">
+        <div class="exp-header">
+          <div class="exp-left">
+            <h3 class="exp-role">Web Development Intern</h3>
+            <a href="https://haronex.com/index.html" target="_blank" rel="noopener" class="exp-company">
+              <i class="fas fa-building"></i>
+              Haronex Technology Private Limited
+              <i class="fas fa-arrow-up-right-from-square" style="font-size:0.55rem;opacity:0.6"></i>
+            </a>
+          </div>
+          <div class="exp-meta">
+            <span class="exp-duration">
+              <i class="fas fa-calendar-alt"></i>
+              2025 – 2026
+            </span>
+            <span class="exp-type completed">
+              <i class="fas fa-circle-check"></i>
+              Completed
+            </span>
+          </div>
+        </div>
+
+        <div class="exp-divider"></div>
+
+        <p class="exp-desc">
+          Worked as a Web Development Intern on developing a full-featured <strong
+            style="color:var(--text);font-weight:600">Point of Sale (POS) Management System</strong> — a web-based
+          application designed to automate retail store operations end to end.
+        </p>
+
+        <ul class="exp-achievements">
+          <li>
+            <i class="fas fa-diamond ach-icon"></i>
+            Designed and built a complete billing engine with GST calculation, discount logic, and automatic invoice
+            generation.
+          </li>
+          <li>
+            <i class="fas fa-diamond ach-icon"></i>
+            Developed an inventory management module with real-time low stock alerts and category-level tracking.
+          </li>
+          <li>
+            <i class="fas fa-diamond ach-icon"></i>
+            Built an interactive sales reports &amp; data visualization dashboard for Admin users.
+          </li>
+          <li>
+            <i class="fas fa-diamond ach-icon"></i>
+            Implemented role-based authentication system supporting Admin and Cashier access levels.
+          </li>
+          <li>
+            <i class="fas fa-diamond ach-icon"></i>
+            Gained hands-on experience in database design, system architecture, debugging, and real-world problem
+            solving.
+          </li>
+        </ul>
+
+        <div class="exp-chips">
+          <span class="exp-chip">PHP</span>
+          <span class="exp-chip">MySQL</span>
+          <span class="exp-chip">JavaScript</span>
+          <span class="exp-chip">Bootstrap</span>
+          <span class="exp-chip">HTML5</span>
+          <span class="exp-chip">CSS3</span>
+          <span class="exp-chip">Database Design</span>
+          <span class="exp-chip">System Design</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ══════════════════════════════════════
+       CERTIFICATES
+  ══════════════════════════════════════ -->
+  <section id="certificates" class="section">
+    <div class="tag reveal">Credentials</div>
+    <h2 class="cert-toggle reveal" onclick="toggleCerts()" tabindex="0" role="button" aria-expanded="true">
+      Certificates
+      <span class="chevron"><i class="fas fa-chevron-down"></i></span>
+    </h2>
+
+    <div id="certs-wrap" class="collapsible">
+      <div class="certs-grid">
+        <div class="certificate">
+          <img src="assets/logos/google.png" alt="Google" onerror="this.style.display='none'" />
+          <div class="cert-body">
+            <h3><i class="fas fa-globe" style="color:var(--accent);margin-right:0.35rem"></i>The Fundamentals of Digital
+              Marketing</h3>
+            <p>Google Digital Garage — SEO, analytics, and digital strategy.</p>
+            <a href="assets/certificates/digitalgarage_certificate.pdf" target="_blank">View Certificate <i
+                class="fas fa-arrow-up-right-from-square" style="font-size:0.65rem"></i></a>
+          </div>
+        </div>
+
+        <div class="certificate">
+          <img src="assets/logos/great_leearning.png" alt="Great Learning" onerror="this.style.display='none'" />
+          <div class="cert-body">
+            <h3><i class="fas fa-chart-bar" style="color:var(--accent);margin-right:0.35rem"></i>Power BI for Beginners
+            </h3>
+            <p>Great Learning — Data visualization, dashboards, and reports.</p>
+            <a href="assets/certificates/power_bi.pdf" target="_blank">View Certificate <i
+                class="fas fa-arrow-up-right-from-square" style="font-size:0.65rem"></i></a>
+          </div>
+        </div>
+
+        <div class="certificate">
+          <img src="assets/logos/free_code_camp.png" alt="freeCodeCamp" onerror="this.style.display='none'" />
+          <div class="cert-body">
+            <h3><i class="fas fa-laptop-code" style="color:var(--accent);margin-right:0.35rem"></i>Responsive Web Design
+            </h3>
+            <p>freeCodeCamp — Flexbox, Grid, and responsive layouts.</p>
+            <a href="assets/certificates/Responsive_web_designing.pdf" target="_blank">View Certificate <i
+                class="fas fa-arrow-up-right-from-square" style="font-size:0.65rem"></i></a>
+          </div>
+        </div>
+
+        <div class="certificate">
+          <img src="assets/logos/coursera.png" alt="Coursera" onerror="this.style.display='none'" />
+          <div class="cert-body">
+            <h3><i class="fas fa-briefcase" style="color:var(--accent);margin-right:0.35rem"></i>Business Analysis &amp;
+              Process Mgmt</h3>
+            <p>Coursera — Business modeling and process improvement.</p>
+            <a href="assets/certificates/business_analysis_certificate.pdf" target="_blank">View Certificate <i
+                class="fas fa-arrow-up-right-from-square" style="font-size:0.65rem"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="contact-inner reveal">
+      <div class="tag" style="color:rgba(200,68,26,0.8)">Say hello</div>
+      <h2>Let's work<br><em>together</em></h2>
+      <p class="contact-sub">Open to internships, collaborations, and interesting conversations.<br>Reach me on any
+        platform below.</p>
+
+      <div class="social-icons">
+        <a href="mailto:work.shivamr@gmail.com" title="Email" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shivam-mistry20" target="_blank" rel="noopener" title="LinkedIn"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/shivam20-tech" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <a href="assets/Shivam_Mistry_CV.pdf" class="resume-btn" download="Shivam_Mistry_Resume.pdf">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p>
+      © <span id="year"></span> Shivam Mistry
+      <span class="footer-accent">.</span>
+    </p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <p>Designed with <span class="footer-accent">♥</span> &amp; curiosity</p>
+  </footer>
+  <script src="/js/scripts.js"></script>
+
+</body>
+
+</html>
